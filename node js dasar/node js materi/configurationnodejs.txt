@@ -1,0 +1,2 @@
+1. install node js di website resmi dan sesuaikan dengan os masing masing 
+2. setelah terinstall didalam terminal ketikan node --v untuk mengecek versi node js dan sukses atau tidaknya instalasi

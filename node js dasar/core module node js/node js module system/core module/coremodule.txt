@@ -1,0 +1,55 @@
+code module adalah module bawaan node js yang dapat di gunakan untuk kebutuhan development
+macam macam core module yang sering di gunakan;
+HTTP Module:
+
+http.createServer([options][, requestListener]): Metode ini digunakan untuk membuat server HTTP baru.
+http.request(options[, callback]): Metode ini digunakan untuk mengirim permintaan HTTP ke server tertentu.
+http.get(options[, callback]): Metode ini mirip dengan http.request() tetapi dengan metode GET.
+FS (File System) Module:
+
+fs.readFile(path[, options], callback): Metode ini digunakan untuk membaca file asinkron.
+fs.writeFile(file, data[, options], callback): Metode ini digunakan untuk menulis data ke file.
+fs.readdir(path[, options], callback): Metode ini digunakan untuk membaca isi dari sebuah direktori.
+Path Module:
+
+path.join([...paths]): Metode ini digunakan untuk menggabungkan semua argumen menjadi path yang valid.
+path.resolve([...paths]): Metode ini digunakan untuk mengubah path relatif menjadi path absolut.
+path.basename(path[, ext]): Metode ini digunakan untuk mengembalikan bagian terakhir dari path.
+Events Module:
+
+EventEmitter.on(eventName, listener): Metode ini digunakan untuk menambahkan penangan peristiwa.
+EventEmitter.emit(eventName[, ...args]): Metode ini digunakan untuk memicu peristiwa tertentu dengan parameter opsional.
+OS Module:
+
+os.platform(): Metode ini mengembalikan platform sistem operasi.
+os.totalmem(): Metode ini mengembalikan jumlah total memori sistem dalam byte.
+os.hostname(): Metode ini mengembalikan nama host sistem.
+Util Module:
+
+util.promisify(original): Metode ini mengubah fungsi berbasis callback menjadi fungsi berbasis Promise.
+util.format(format[, ...args]): Metode ini digunakan untuk memformat string dengan placeholder.
+util.inspect(object[, options]): Metode ini digunakan untuk mengembalikan representasi string dari objek.
+Crypto Module:
+
+crypto.createHash(algorithm): Metode ini digunakan untuk membuat objek hash.
+crypto.randomBytes(size[, callback]): Metode ini digunakan untuk menghasilkan byte acak.
+crypto.createCipher(algorithm, password): Metode ini digunakan untuk membuat objek cipher dengan algoritma tertentu dan kata sandi.
+Query String Module:
+
+querystring.parse(str[, sep[, eq[, options]]]): Metode ini digunakan untuk menguraikan string query menjadi objek.
+querystring.stringify(obj[, sep[, eq[, options]]]): Metode ini digunakan untuk mengubah objek menjadi string query.
+Child Process Module:
+
+child_process.spawn(command[, args][, options]): Metode ini digunakan untuk memulai proses baru.
+child_process.exec(command[, options][, callback]): Metode ini digunakan untuk menjalankan perintah dalam subshell.
+child_process.fork(modulePath[, args][, options]): Metode ini digunakan untuk membuat proses anak baru yang independen.
+Net Module:
+
+net.createServer([options][, connectionListener]): Metode ini digunakan untuk membuat server TCP baru.
+net.connect(options[, connectListener]): Metode ini digunakan untuk membuat koneksi TCP ke server.
+net.Socket: Kelas ini merepresentasikan koneksi socket TCP.
+HTTPS Module:
+
+https.createServer([options][, requestListener]): Metode ini digunakan untuk membuat server HTTPS baru.
+https.request(options[, callback]): Metode ini mirip dengan http.request() tetapi untuk koneksi HTTPS.
+https.get(options[, callback]): Metode ini mirip dengan http.get() tetapi untuk koneksi HTTPS.

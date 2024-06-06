@@ -1,0 +1,22 @@
+npm adalah sebuah packet pada node js yang digunakan untuk menginstall beberapa module atau library 
+yang ada pada node js melalui npm 
+
+1. cara install module
+npm install <nama module>
+
+2. package.json digunakan untuk mengelola dependencie project node js 
+ package.json digunakan sebagai metadata berisi tentang project node js seperti pengembang.
+
+
+// cara menggunakan module 
+untuk menggunakan module / library yang telah di install menggunakan npm 
+anda tinggal mengimport atau menggunakan require 
+syaratnya module tersebut harus berada di file directory yang sama 
+
+contoh 
+
+di direktory latihan 
+
+latihan.js
+const moment=require('moment')
+console.log(moment())

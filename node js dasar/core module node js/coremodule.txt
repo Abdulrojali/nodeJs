@@ -1,0 +1,32 @@
+macam macam core module node js yang sering di gunakan
+
+1. http module
+const http = require('http');
+
+
+2. file sistem
+const fs = require('fs');
+
+
+3. path module
+const path = require('path');
+
+
+4. events module
+const EventEmitter = require('events');
+
+
+5. readline module
+const readline = require('readline');
+
+
+6. querystring module
+const querystring = require('querystring');
+
+
+7. url module
+const url = require('url');
+
+
+8. util module
+const util = require('util');

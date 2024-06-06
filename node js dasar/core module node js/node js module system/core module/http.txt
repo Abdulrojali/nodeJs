@@ -1,0 +1,41 @@
+http adalah core module node js yang digunakan untuk menghandle request ke server maupun membuat server
+beberapa macam http module yang sering di gunakan;
+
+const http=require('http')
+
+// membuat server
+1. http.createServer((req,response)=>{
+    response.end("selamat datang")
+})
+
+contoh ;
+const server=http.createServer((req,res)=>{
+    res.end('selamat datang')
+})
+server.listen(8000)
+
+
+2.response body dan response header adalah data payload yang akan di kirim ke client
+http.createServer((req,res)=>{
+    res.writeHeader(ping,{content-type:typedata})
+    res.write('<h3>hello world</h3>')
+    res.end('selamat datang')
+})
+
+contoh;
+const server=http.createServer((req,res)=>{
+    res.writeHeader(200,{content-type:"text/html"})
+    res.write('<h5> selamat datang!</h5>')
+    res.end('terimakasih')
+})
+
+
+macam macam content yang dapat di ubah diantaranya ;
+response.writeHead(200, {'Content-Type': 'application/json'});
+
+// untuk PDF
+response.writeHead(200, {'Content-Type': 'application/pdf'});
+
+// untuk XML
+response.writeHead(200, {'Content-Type': 'application/xml'});
+

@@ -1,0 +1,48 @@
+
+macam macam methods file sistem yang sering di gunakan 
+
+1. fs (file sistem) digunakan untuk mengatur file yang ada pada directory bisa melakukan crud 
+contoh penggunaan : const fs=require('fs')
+
+beberapa methods yang sering di gunakan pada fs ;
+* fs.readFile('nameFile','utf-8',callback)
+contoh ;
+fs.readFile('latihan.js','utf-8',(err,suk)=>{
+    if(err)
+    throw err
+    else console.log(suk)
+})
+
+* fs.writeFile('nameFile','teks yang akan di tulis','utf-8',callback)
+contoh ;
+fs.writeFile('latihan2','selamat Datang','utf-8',(err,sukses)=>{
+    if(err)
+    throw err
+    else 
+    return sukses
+})
+
+* fs. readdir('nama Direktory',callback)
+contoh 
+fs.readdir('./core module',(err,sukses)=>{
+    if(err)
+    throw err
+    else 
+    return sukses
+})
+
+
+*fs.appendFile
+contoh ;
+fs.appendFile('mynewfile1.txt', 'Hello dari Petanikode!', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});
+
+
+*fs.open
+contoh ;
+fs.open('mynewfile2.txt', 'w', function (err, file) {
+  if (err) throw err;
+  console.log('Saved!');
+});

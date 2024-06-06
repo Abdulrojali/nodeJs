@@ -1,0 +1,15 @@
+http adalah sebuah module bawaan node js yang digunakan untuk membuat server berbasis node js 
+dan juga mengatasi permintaan request http
+
+// mengimport http
+const http=require('http')
+
+1. membuat server dengan http
+const server=http.createServer(function(req,res){
+    res.end('hallo selamat datang!')
+})
+
+
+2. menentukan port pada server
+server.listen(8080)
+

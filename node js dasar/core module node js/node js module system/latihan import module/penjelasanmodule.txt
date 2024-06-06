@@ -1,0 +1,43 @@
+node module adalah sebuah packet yang di dapat di gunakan pada setiap file dengan menggunakan 
+export module 
+
+contoh :
+
+latihan1.js
+const perhitungan = function(a,b,operator){
+    if(operator=='tambah'){
+        return a+b
+    }
+    else if(operator==='kali'){
+        return a*b
+    }
+    else if(operator=='bagi'){
+        return a/b
+    }
+    else{
+        return a-b
+    }
+}
+
+export perhitungan
+
+
+
+latihan2.js
+import perhitungan from './latihan1.js'
+
+const tambah=new perhitungan(a,b,operator)
+
+console.log(tambah(10,2,tambah))
+hasil : 12
+
+
+// berbagai macam module di node js
+1. core module adalah module bawaan dari node js yang dapat di gunakan 
+2. local module adalah module yang dibuat oleh kita
+3. thirty party module adalah module yang di buat oleh orang lain yang dapat di pakai
+ melalui packet node js yaitu npm
+
+
+* require() digunakan untuk memetakan alamat module/ digunakan untuk mencari module yang di cari 
+* export digunakan untuk mengimport module secara global
